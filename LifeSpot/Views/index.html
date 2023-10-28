@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="/Static/CSS/index.css" rel="stylesheet" type="text/css" />
+    <script src="/Static/JS/Index.js"></script>
+    <script src="/Static/JS/testing.js"></script>
+    <script>
+
+        handleSession()
+
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+
+        //setTimeout(() => alert('Нраится LifeSpot? ' + '\n' + 'Подпишись на наш Instagram @lifespot9999'), 30000);
+
+    </script>
+</head>
+<body>
+    <div class="bordered">
+        <header id="header-index">
+            <div class="info-card">
+                <!-- Заголовок страницы -->
+                <h1> LifeSpot - прямые трансляции с улиц </h1>
+                <!-- Параграф -->
+                <p> На сайте вы можете посмотреть прямые трансляции с камер видеонаблюдения. </p>
+            </div>
+            <div class="info-card finder">
+                <label for="finder" placeholder="12313">Найти видео:</label>
+                <input type="text" oninput="filterContent();"
+                       name="finder" placeholder="Введите название..." />
+
+            </div>
+        </header>
+        <!--SIDEBAR-->
+        <!-- Нью-Йорк -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/srlpC5tmhYs" frameborder="0" title="Youtube video Player"
+                    width="530" height="315"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <h3 class="video-title">Нью-Йорк</h3>
+        </div>
+        <!-- Санкт-Петербург -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/h1wly909BYw?si=YDAjkj9wOTvtRNvg" frameborder="0"
+                    title="Youtube video Player" width="530" height="315"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <h3 class="video-title">Санкт-Петербург</h3">
+        </div>
+        <!-- Лондон -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/nE8qkw9u7tQ?si=V8tW5uCEBH_rp2dh" frameborder="0"
+                    title="Youtube video Player" width="530" height="315"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <h3 class="video-title">Лондон</h3>
+        </div>
+        <!--FOOTER-->
+    </div>
+    <!--
+    <div class="bordered">
+
+    </div> -->
+</body>
+
+</html>
